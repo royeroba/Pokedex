@@ -5,8 +5,8 @@
       <img
         :src="
           pokemonStore.isFavorite(name)
-            ? '/src/assets/img/fav-active.svg'
-            : '/src/assets/img/fav-inactive.svg'
+            ? '/img/fav-active.svg'
+            : '/img/fav-inactive.svg'
         "
         alt="Favorite-Icon"
       />
