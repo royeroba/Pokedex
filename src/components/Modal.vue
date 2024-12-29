@@ -1,11 +1,7 @@
 <template>
   <div class="modal-backdrop" @click.self="closeModal">
     <div class="modal">
-      <img
-        class="modal-cover"
-        src="/src/assets/img/modal-cover.svg"
-        alt="modal-cover"
-      />
+      <img class="modal-cover" src="/img/modal-cover.svg" alt="modal-cover" />
 
       <img
         v-if="pokemon?.sprites?.front_default"
@@ -16,7 +12,7 @@
 
       <img
         class="modal-close"
-        src="/src/assets/img/close.svg"
+        src="/img/close.svg"
         alt="close"
         @click="closeModal"
       />
@@ -46,11 +42,7 @@
         <PokeButton text="Share to my friends" @click="shareToFriends" />
         <img
           class="modal-favorite"
-          :src="
-            isFavorite
-              ? '/src/assets/img/fav-active.svg'
-              : '/src/assets/img/fav-inactive.svg'
-          "
+          :src="isFavorite ? '/img/fav-active.svg' : '/img/fav-inactive.svg'"
           alt="Favorite-Icon"
           @click="toggleFavorite"
         />

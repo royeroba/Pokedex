@@ -1,11 +1,7 @@
 <template>
   <div class="search-input">
     <span v-if="icon" class="search-icon">
-      <img
-        :src="`/src/assets/img/${icon}.svg`"
-        alt="Input-Icon"
-        class="icon-img"
-      />
+      <img :src="`/img/${icon}.svg`" alt="Input-Icon" class="icon-img" />
     </span>
     <input
       type="text"

@@ -1,11 +1,6 @@
 <template>
   <button :disabled="disabled" :class="['btn', sizeClass]">
-    <img
-      v-if="icon"
-      :src="`/src/assets/img/${icon}.svg`"
-      alt="icon"
-      class="btn-icon"
-    />
+    <img v-if="icon" :src="`/img/${icon}.svg`" alt="icon" class="btn-icon" />
     <p class="btn-text">{{ text }}</p>
   </button>
 </template>
